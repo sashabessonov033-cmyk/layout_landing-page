@@ -10,14 +10,17 @@
 
   &--phone {
 background-image: url(../Icon-Phone-call.png);
+background-repeat: no-repeat;
 }
 
 &--menu {
   background-image: url(../Icon-Burger-menu.png);
+  background-repeat: no-repeat;
 }
 
 &--clouse {
   background-image: url(../Icon-Close.png);
+  background-repeat: no-repeat; 
  }
 }
 

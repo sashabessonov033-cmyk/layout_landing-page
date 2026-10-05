@@ -15,7 +15,7 @@
 }
 
 &__content {
-  padding-inline: 20px;
+  @include contentPaddingInline;
 }
 
 .text-title {

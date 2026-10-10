@@ -1,8 +1,10 @@
-@use "../utils/variables.scss";
+@use "../utils/variables.scss" as *;
 
 @use "../utils/mixins.scss" as *;
 
 .header {
+display: none;
+
 box-sizing: border-box;
 height: 100vh;
 background-image: url(../header-bg-mobile.png);
@@ -21,9 +23,14 @@ background-position: center;
   font-weight: 700;
   font-size: 40px;
   line-height: 44px;
+  margin-bottom: 2px;
   letter-spacing: -1px;
   text-align: center;
   margin: 40px 20px;
+
+  @include onTablet {
+    font-size: 64px;
+  }
 }
 
 // @media (min-width: 768px) {

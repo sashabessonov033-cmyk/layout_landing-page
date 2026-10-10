@@ -1,6 +1,6 @@
-@use "../utils/variables.scss";
+@use "utils/variables.scss";
 
-@use "../utils/mixins.scss";
+@use "utils/mixins.scss";
 
 @use 'blocks/page';
 
@@ -14,3 +14,4 @@
 
 @use 'blocks/nav';
 
+@use 'blocks/section-title.scss';

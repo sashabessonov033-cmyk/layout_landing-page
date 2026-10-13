@@ -1,11 +1,31 @@
+@use "../utils/variables.scss" as *;
+
+@use "../utils/mixins.scss" as *;
+
 .recommended {
-  margin: 0;
-
-
-  
   &__products {
     display: grid;
-    row-gap: 40px;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: clamp(24px, 5vw, 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 32px);
+    box-sizing: border-box;
 
+    &__product--end {
+      display: flex;
+      gap: 16px;
+    }
+
+    @include onTablet {
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .recommended__products {
+    padding: 0;
+    justify-content: stretch;
   }
 }

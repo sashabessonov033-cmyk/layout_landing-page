@@ -1,0 +1,32 @@
+@use "../utils/variables.scss" as *;
+
+@use "../utils/mixins.scss" as *;
+
+.categories {
+  &__products {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: clamp(24px, 5vw, 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 32px);
+    box-sizing: border-box;
+
+    &__product--end {
+      display: flex;
+      gap: 24px;
+    }
+
+    @include onTablet {
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .categories__products {
+    padding: 0;
+    justify-content: stretch;
+  }
+}
